@@ -13,7 +13,7 @@ const { json } = require("body-parser")
 
 const configuration = new Configuration({
 
-    apiKey: "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",
+    apiKey: "enter your api key",
 });
 const openai = new OpenAIApi(configuration);
 
