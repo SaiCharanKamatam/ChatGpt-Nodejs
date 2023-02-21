@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require("express")
 const mongoose = require("mongoose")
 const app = express()
@@ -10,10 +11,9 @@ const { infoModel } = require("./models/schema")
 
 const { Configuration, OpenAIApi } = require("openai");
 const { json } = require("body-parser")
-
+const apiKey = process.env.API_KEY
 const configuration = new Configuration({
-
-    apiKey: "enter your api key",
+    apiKey: apiKey,
 });
 const openai = new OpenAIApi(configuration);
 
