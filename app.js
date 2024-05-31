@@ -21,7 +21,9 @@ const openai = new OpenAIApi(configuration);
 
 
 const main = async () => {
-    await mongoose.connect("mongodb+srv://saicharankamatam:Charan0608@cluster0.xsadjnm.mongodb.net/?retryWrites=true&w=majority")
+    // await mongoose.connect("mongodb+srv://saicharankamatam:Charan0608@cluster0.xsadjnm.mongodb.net/?retryWrites=true&w=majority")
+     await mongoose.connect(" mongodb+srv://saicharankamatam:Lx9ztRqogSyHK3gt@trades.fq4ccsy.mongodb.net/?retryWrites=true&w=majority&appName=Trades")
+   
     app.listen(5000, () => console.log("listening"))
 
     app.post("/questions", async (req, res) => {
